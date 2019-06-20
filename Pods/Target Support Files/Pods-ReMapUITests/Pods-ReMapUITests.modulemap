@@ -1,0 +1,6 @@
+framework module Pods_ReMapUITests {
+  umbrella header "Pods-ReMapUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

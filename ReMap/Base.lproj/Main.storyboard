@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MapVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MapVC" customModule="ReMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" zoomEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6I-lO-2AB">
+                                <rect key="frame" x="0.0" y="44" width="414" height="770"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErL-u5-30q">
+                                <rect key="frame" x="364" y="749" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Kai-XS-6pF"/>
+                                    <constraint firstAttribute="height" constant="50" id="yiK-Ul-TNA"/>
+                                </constraints>
+                                <state key="normal" image="locationButton"/>
+                                <connections>
+                                    <action selector="pressedMyPosition:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w33-LS-qyh"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YfA-ct-pqr">
+                                <rect key="frame" x="0.0" y="895" width="414" height="1"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="RWd-9K-o9r"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YfA-ct-pqr" secondAttribute="trailing" id="8k2-zY-WiI"/>
+                            <constraint firstItem="R6I-lO-2AB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JpF-xb-4ue"/>
+                            <constraint firstAttribute="bottom" secondItem="YfA-ct-pqr" secondAttribute="bottom" id="KO4-k5-Mn9"/>
+                            <constraint firstItem="YfA-ct-pqr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="N2P-hg-PAj"/>
+                            <constraint firstItem="R6I-lO-2AB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QOI-Ww-ZaJ"/>
+                            <constraint firstItem="YfA-ct-pqr" firstAttribute="top" secondItem="ErL-u5-30q" secondAttribute="bottom" constant="10" id="YFZ-JZ-V4R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R6I-lO-2AB" secondAttribute="trailing" id="Yzh-mF-pBq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="R6I-lO-2AB" secondAttribute="bottom" id="aKc-Bb-zCz"/>
+                            <constraint firstAttribute="trailing" secondItem="ErL-u5-30q" secondAttribute="trailing" constant="10" id="udI-rM-whH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="R6I-lO-2AB" id="jcJ-A0-8fw"/>
+                        <outlet property="slideView" destination="YfA-ct-pqr" id="00D-75-Xy8"/>
+                        <outlet property="slideViewHeight" destination="RWd-9K-o9r" id="zkQ-RU-tiB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="18.75"/>
+        </scene>
+        <!--Pop UpVC-->
+        <scene sceneID="u96-dc-Lm5">
+            <objects>
+                <viewController storyboardIdentifier="popVC" id="XGx-4i-xz0" customClass="PopUpVC" customModule="ReMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z2b-LD-Sec">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3nH-bA-Rcw">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4eS-L8-wNI" firstAttribute="trailing" secondItem="3nH-bA-Rcw" secondAttribute="trailing" id="6zy-Hc-iEJ"/>
+                            <constraint firstItem="3nH-bA-Rcw" firstAttribute="top" secondItem="4eS-L8-wNI" secondAttribute="top" id="BSg-5G-I09"/>
+                            <constraint firstItem="4eS-L8-wNI" firstAttribute="bottom" secondItem="3nH-bA-Rcw" secondAttribute="bottom" id="CT0-n5-IVo"/>
+                            <constraint firstItem="3nH-bA-Rcw" firstAttribute="leading" secondItem="4eS-L8-wNI" secondAttribute="leading" id="eCI-QF-kVf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4eS-L8-wNI"/>
+                    </view>
+                    <connections>
+                        <outlet property="popUpImage" destination="3nH-bA-Rcw" id="L6O-uE-Nrr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jsm-SW-D2p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="774" y="19"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="locationButton" width="67" height="67"/>
+    </resources>
+</document>

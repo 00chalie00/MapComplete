@@ -1,0 +1,782 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19DB4037C5B8ACAD29D02155 /* Pods_ReMapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA4D75CFC22916212218E35 /* Pods_ReMapUITests.framework */; };
+		21066A3322B1CDDB00039E26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21066A3222B1CDDB00039E26 /* AppDelegate.swift */; };
+		21066A3522B1CDDB00039E26 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21066A3422B1CDDB00039E26 /* MapVC.swift */; };
+		21066A3822B1CDDB00039E26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21066A3622B1CDDB00039E26 /* Main.storyboard */; };
+		21066A3A22B1CDDE00039E26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21066A3922B1CDDE00039E26 /* Assets.xcassets */; };
+		21066A3D22B1CDDE00039E26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21066A3B22B1CDDE00039E26 /* LaunchScreen.storyboard */; };
+		21066A4822B1CDDE00039E26 /* ReMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21066A4722B1CDDE00039E26 /* ReMapTests.swift */; };
+		21066A5322B1CDDE00039E26 /* ReMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21066A5222B1CDDE00039E26 /* ReMapUITests.swift */; };
+		21066A6522B1E97F00039E26 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21066A6422B1E97F00039E26 /* Annotation.swift */; };
+		21066A6722B21C2F00039E26 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21066A6622B21C2F00039E26 /* PhotoCell.swift */; };
+		21066A6922B2203C00039E26 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21066A6822B2203C00039E26 /* Constants.swift */; };
+		213C70C122B388A400068D51 /* PopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213C70C022B388A400068D51 /* PopUpVC.swift */; };
+		2B85FFFA9CD99D34EB1E6D7F /* Pods_ReMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE954D74759F1F38776720B5 /* Pods_ReMap.framework */; };
+		44FA2774CD2E1F87EC1CFD09 /* Pods_ReMapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607CD653BF1829B9DE2A1C5A /* Pods_ReMapTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		21066A4422B1CDDE00039E26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21066A2722B1CDDB00039E26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21066A2E22B1CDDB00039E26;
+			remoteInfo = ReMap;
+		};
+		21066A4F22B1CDDE00039E26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21066A2722B1CDDB00039E26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21066A2E22B1CDDB00039E26;
+			remoteInfo = ReMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		21066A2F22B1CDDB00039E26 /* ReMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21066A3222B1CDDB00039E26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		21066A3422B1CDDB00039E26 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		21066A3722B1CDDB00039E26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		21066A3922B1CDDE00039E26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21066A3C22B1CDDE00039E26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		21066A3E22B1CDDE00039E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21066A4322B1CDDE00039E26 /* ReMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21066A4722B1CDDE00039E26 /* ReMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReMapTests.swift; sourceTree = "<group>"; };
+		21066A4922B1CDDE00039E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21066A4E22B1CDDE00039E26 /* ReMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21066A5222B1CDDE00039E26 /* ReMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReMapUITests.swift; sourceTree = "<group>"; };
+		21066A5422B1CDDE00039E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21066A6422B1E97F00039E26 /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
+		21066A6622B21C2F00039E26 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		21066A6822B2203C00039E26 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		213C70C022B388A400068D51 /* PopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpVC.swift; sourceTree = "<group>"; };
+		2259A9AEC526568C40220A21 /* Pods-ReMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReMap/Pods-ReMap.debug.xcconfig"; sourceTree = "<group>"; };
+		2B3C52591850C42FFFD97DE3 /* Pods-ReMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReMapTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReMapTests/Pods-ReMapTests.release.xcconfig"; sourceTree = "<group>"; };
+		4B2681AE8FCC98C1AC7D85B8 /* Pods-ReMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReMap/Pods-ReMap.release.xcconfig"; sourceTree = "<group>"; };
+		4CA4D75CFC22916212218E35 /* Pods_ReMapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReMapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		607CD653BF1829B9DE2A1C5A /* Pods_ReMapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReMapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE954D74759F1F38776720B5 /* Pods_ReMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAD8BAAA2BB49576D5D1E579 /* Pods-ReMapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReMapUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReMapUITests/Pods-ReMapUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DC043FA2F19972C35646E6FD /* Pods-ReMapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReMapTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReMapTests/Pods-ReMapTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E5325FEE7A005746B41DF5E1 /* Pods-ReMapUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReMapUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReMapUITests/Pods-ReMapUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21066A2C22B1CDDB00039E26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B85FFFA9CD99D34EB1E6D7F /* Pods_ReMap.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21066A4022B1CDDE00039E26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44FA2774CD2E1F87EC1CFD09 /* Pods_ReMapTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21066A4B22B1CDDE00039E26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19DB4037C5B8ACAD29D02155 /* Pods_ReMapUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21066A2622B1CDDB00039E26 = {
+			isa = PBXGroup;
+			children = (
+				21066A3122B1CDDB00039E26 /* ReMap */,
+				21066A4622B1CDDE00039E26 /* ReMapTests */,
+				21066A5122B1CDDE00039E26 /* ReMapUITests */,
+				21066A3022B1CDDB00039E26 /* Products */,
+				8913317BCF191D6CEFEDB009 /* Pods */,
+				69275587315D1BA929E7DCDF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		21066A3022B1CDDB00039E26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21066A2F22B1CDDB00039E26 /* ReMap.app */,
+				21066A4322B1CDDE00039E26 /* ReMapTests.xctest */,
+				21066A4E22B1CDDE00039E26 /* ReMapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21066A3122B1CDDB00039E26 /* ReMap */ = {
+			isa = PBXGroup;
+			children = (
+				21066A6322B1CE3600039E26 /* Utility */,
+				21066A6222B1CE3000039E26 /* Model */,
+				21066A6122B1CE2B00039E26 /* View */,
+				21066A6022B1CE2500039E26 /* Controller */,
+				21066A3222B1CDDB00039E26 /* AppDelegate.swift */,
+				21066A3622B1CDDB00039E26 /* Main.storyboard */,
+				21066A3922B1CDDE00039E26 /* Assets.xcassets */,
+				21066A3B22B1CDDE00039E26 /* LaunchScreen.storyboard */,
+				21066A3E22B1CDDE00039E26 /* Info.plist */,
+			);
+			path = ReMap;
+			sourceTree = "<group>";
+		};
+		21066A4622B1CDDE00039E26 /* ReMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				21066A4722B1CDDE00039E26 /* ReMapTests.swift */,
+				21066A4922B1CDDE00039E26 /* Info.plist */,
+			);
+			path = ReMapTests;
+			sourceTree = "<group>";
+		};
+		21066A5122B1CDDE00039E26 /* ReMapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				21066A5222B1CDDE00039E26 /* ReMapUITests.swift */,
+				21066A5422B1CDDE00039E26 /* Info.plist */,
+			);
+			path = ReMapUITests;
+			sourceTree = "<group>";
+		};
+		21066A6022B1CE2500039E26 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				21066A3422B1CDDB00039E26 /* MapVC.swift */,
+				213C70C022B388A400068D51 /* PopUpVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		21066A6122B1CE2B00039E26 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				21066A6422B1E97F00039E26 /* Annotation.swift */,
+				21066A6622B21C2F00039E26 /* PhotoCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		21066A6222B1CE3000039E26 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		21066A6322B1CE3600039E26 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				21066A6822B2203C00039E26 /* Constants.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		69275587315D1BA929E7DCDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE954D74759F1F38776720B5 /* Pods_ReMap.framework */,
+				607CD653BF1829B9DE2A1C5A /* Pods_ReMapTests.framework */,
+				4CA4D75CFC22916212218E35 /* Pods_ReMapUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8913317BCF191D6CEFEDB009 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2259A9AEC526568C40220A21 /* Pods-ReMap.debug.xcconfig */,
+				4B2681AE8FCC98C1AC7D85B8 /* Pods-ReMap.release.xcconfig */,
+				DC043FA2F19972C35646E6FD /* Pods-ReMapTests.debug.xcconfig */,
+				2B3C52591850C42FFFD97DE3 /* Pods-ReMapTests.release.xcconfig */,
+				E5325FEE7A005746B41DF5E1 /* Pods-ReMapUITests.debug.xcconfig */,
+				CAD8BAAA2BB49576D5D1E579 /* Pods-ReMapUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21066A2E22B1CDDB00039E26 /* ReMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21066A5722B1CDDE00039E26 /* Build configuration list for PBXNativeTarget "ReMap" */;
+			buildPhases = (
+				8EE30CA961F9F41CB3EB9B94 /* [CP] Check Pods Manifest.lock */,
+				21066A2B22B1CDDB00039E26 /* Sources */,
+				21066A2C22B1CDDB00039E26 /* Frameworks */,
+				21066A2D22B1CDDB00039E26 /* Resources */,
+				671F57EEB3EA8BC728BBDEF8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReMap;
+			productName = ReMap;
+			productReference = 21066A2F22B1CDDB00039E26 /* ReMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		21066A4222B1CDDE00039E26 /* ReMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21066A5A22B1CDDE00039E26 /* Build configuration list for PBXNativeTarget "ReMapTests" */;
+			buildPhases = (
+				79262F26C925082BD5B7960C /* [CP] Check Pods Manifest.lock */,
+				21066A3F22B1CDDE00039E26 /* Sources */,
+				21066A4022B1CDDE00039E26 /* Frameworks */,
+				21066A4122B1CDDE00039E26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21066A4522B1CDDE00039E26 /* PBXTargetDependency */,
+			);
+			name = ReMapTests;
+			productName = ReMapTests;
+			productReference = 21066A4322B1CDDE00039E26 /* ReMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		21066A4D22B1CDDE00039E26 /* ReMapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21066A5D22B1CDDE00039E26 /* Build configuration list for PBXNativeTarget "ReMapUITests" */;
+			buildPhases = (
+				438973E8DC168EFB9CE77B1E /* [CP] Check Pods Manifest.lock */,
+				21066A4A22B1CDDE00039E26 /* Sources */,
+				21066A4B22B1CDDE00039E26 /* Frameworks */,
+				21066A4C22B1CDDE00039E26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21066A5022B1CDDE00039E26 /* PBXTargetDependency */,
+			);
+			name = ReMapUITests;
+			productName = ReMapUITests;
+			productReference = 21066A4E22B1CDDE00039E26 /* ReMapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21066A2722B1CDDB00039E26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = formathead;
+				TargetAttributes = {
+					21066A2E22B1CDDB00039E26 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					21066A4222B1CDDE00039E26 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 21066A2E22B1CDDB00039E26;
+					};
+					21066A4D22B1CDDE00039E26 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 21066A2E22B1CDDB00039E26;
+					};
+				};
+			};
+			buildConfigurationList = 21066A2A22B1CDDB00039E26 /* Build configuration list for PBXProject "ReMap" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21066A2622B1CDDB00039E26;
+			productRefGroup = 21066A3022B1CDDB00039E26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21066A2E22B1CDDB00039E26 /* ReMap */,
+				21066A4222B1CDDE00039E26 /* ReMapTests */,
+				21066A4D22B1CDDE00039E26 /* ReMapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21066A2D22B1CDDB00039E26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21066A3D22B1CDDE00039E26 /* LaunchScreen.storyboard in Resources */,
+				21066A3A22B1CDDE00039E26 /* Assets.xcassets in Resources */,
+				21066A3822B1CDDB00039E26 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21066A4122B1CDDE00039E26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21066A4C22B1CDDE00039E26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		438973E8DC168EFB9CE77B1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReMapUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		671F57EEB3EA8BC728BBDEF8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ReMap/Pods-ReMap-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReMap/Pods-ReMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79262F26C925082BD5B7960C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReMapTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EE30CA961F9F41CB3EB9B94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReMap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21066A2B22B1CDDB00039E26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21066A6922B2203C00039E26 /* Constants.swift in Sources */,
+				21066A6722B21C2F00039E26 /* PhotoCell.swift in Sources */,
+				21066A3522B1CDDB00039E26 /* MapVC.swift in Sources */,
+				213C70C122B388A400068D51 /* PopUpVC.swift in Sources */,
+				21066A6522B1E97F00039E26 /* Annotation.swift in Sources */,
+				21066A3322B1CDDB00039E26 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21066A3F22B1CDDE00039E26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21066A4822B1CDDE00039E26 /* ReMapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21066A4A22B1CDDE00039E26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21066A5322B1CDDE00039E26 /* ReMapUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21066A4522B1CDDE00039E26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21066A2E22B1CDDB00039E26 /* ReMap */;
+			targetProxy = 21066A4422B1CDDE00039E26 /* PBXContainerItemProxy */;
+		};
+		21066A5022B1CDDE00039E26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21066A2E22B1CDDB00039E26 /* ReMap */;
+			targetProxy = 21066A4F22B1CDDE00039E26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		21066A3622B1CDDB00039E26 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21066A3722B1CDDB00039E26 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		21066A3B22B1CDDE00039E26 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21066A3C22B1CDDE00039E26 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21066A5522B1CDDE00039E26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		21066A5622B1CDDE00039E26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21066A5822B1CDDE00039E26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2259A9AEC526568C40220A21 /* Pods-ReMap.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QT5YS9GGYX;
+				INFOPLIST_FILE = ReMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chul.ReMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		21066A5922B1CDDE00039E26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B2681AE8FCC98C1AC7D85B8 /* Pods-ReMap.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QT5YS9GGYX;
+				INFOPLIST_FILE = ReMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chul.ReMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		21066A5B22B1CDDE00039E26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC043FA2F19972C35646E6FD /* Pods-ReMapTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QT5YS9GGYX;
+				INFOPLIST_FILE = ReMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chul.ReMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReMap.app/ReMap";
+			};
+			name = Debug;
+		};
+		21066A5C22B1CDDE00039E26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B3C52591850C42FFFD97DE3 /* Pods-ReMapTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QT5YS9GGYX;
+				INFOPLIST_FILE = ReMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chul.ReMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReMap.app/ReMap";
+			};
+			name = Release;
+		};
+		21066A5E22B1CDDE00039E26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5325FEE7A005746B41DF5E1 /* Pods-ReMapUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QT5YS9GGYX;
+				INFOPLIST_FILE = ReMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chul.ReMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ReMap;
+			};
+			name = Debug;
+		};
+		21066A5F22B1CDDE00039E26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAD8BAAA2BB49576D5D1E579 /* Pods-ReMapUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QT5YS9GGYX;
+				INFOPLIST_FILE = ReMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chul.ReMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ReMap;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21066A2A22B1CDDB00039E26 /* Build configuration list for PBXProject "ReMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21066A5522B1CDDE00039E26 /* Debug */,
+				21066A5622B1CDDE00039E26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21066A5722B1CDDE00039E26 /* Build configuration list for PBXNativeTarget "ReMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21066A5822B1CDDE00039E26 /* Debug */,
+				21066A5922B1CDDE00039E26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21066A5A22B1CDDE00039E26 /* Build configuration list for PBXNativeTarget "ReMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21066A5B22B1CDDE00039E26 /* Debug */,
+				21066A5C22B1CDDE00039E26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21066A5D22B1CDDE00039E26 /* Build configuration list for PBXNativeTarget "ReMapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21066A5E22B1CDDE00039E26 /* Debug */,
+				21066A5F22B1CDDE00039E26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 21066A2722B1CDDB00039E26 /* Project object */;
+}
